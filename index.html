@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Static Template</title>
+  </head>
+  <body>
+
+<style>
+
+
+body{ 
+font-family: Helvetica;
+}
+
+
+header {
+    overflow: hidden;
+    background-color: #101B22;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  div.topnav-1{
+    overflow: hidden;
+    background-color: #101B22;
+    font-size:7pt;
+    margin-right: 50px;
+  }
+
+  .topnav-1 a {
+    padding: 14px 16px;
+    background-color: #101B22;
+    float: right;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+  }
+
+
+
+  .topnav-2 {
+    overflow: inline;
+    background-color: #101B22;
+    font-size: 12pt;
+    margin-top: 0px;
+    margin-left: 50px;
+  }
+
+  .topnav-2 a {
+    padding: 14px 16px;
+    background-color: #101B22;
+    float: left;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  ol.menu{ 
+    list-style:none;
+    display: inline;
+    float:center;
+  }
+
+  img.logo{
+    width:81px;
+    height:72px;
+  }
+
+
+  .topnav-2-right {
+    background-color: #101B22;
+    font-size: 12pt;
+    align: right
+  }
+
+  .topnav-2-right {
+    float: right;
+    margin-right: 50px;
+  }
+
+  div.topnav-2-right a {
+  padding: 0px 16px;
+  background-color: #101B22;
+  float: right;
+  color: white;
+  text-align: right;
+  text-decoration: none;
+  display: inline-flex;
+  }
+
+  ol.submenu{ 
+    list-style:none;
+  }
+
+  li {
+    float: left;
+  }
+
+  img.submenu{
+    height:20px;
+  }
+
+
+.searchbar {
+    padding: 16px;
+    margin-right: 50px;
+    margin-left: 50px;
+    float: center;
+    Font-size: 12pt;
+    font-style: italic;
+    color: #c7c7c7;
+  }
+
+  img.searchbtn{
+    height:20px;
+  }
+
+main{
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+
+.content {
+    overflow: hidden;
+    background-color: #371c1d;
+    margin-right: 50px;
+    margin-left: 50px;
+    display: felx;
+    flex-direction: row;
+  }
+
+  .coloredbox{
+    background-color: #371c1d;
+    padding: 40px 0px;
+  }
+
+  .poster{
+    overflow: visible;
+    display: felx;
+    flex-direction: row;
+    width: 300px;
+    height: 450px;
+  }
+
+  img.poster {
+    margin-bottom: 0px;
+    border-width: 0px;
+    position: relative;
+  }
+ 
+  .title {
+    padding: 10px 2px;
+    text-decoration: none;
+    color:white;
+    font-size: 30pt;
+    font-weight: bold;
+  }
+
+  .year {
+    text-decoration: none;
+    color:grey;
+    font-size: 15pt;
+  }
+
+  div.info{
+    overflow: hidden;
+    font-size:7pt;
+    margin-right: 50px;
+  }
+
+  .info a {
+    padding: 10px 6px;
+    float: left;
+    color: gray;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  ol{
+    list-style:none;
+    display: inline;
+    float:center;
+  }
+
+  img.icons {
+    height:68px;
+  }
+
+  .text {
+    color: white;
+  }
+<!–– Navbar Style ––> 
+  .navbar {
+    overflow: hidden;
+    background-color: white;
+    font-family: Helvetica;
+  }
+
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: white;
+  }
+
+  /* Add a gray background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+  }
+
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  /* Add a black background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .topnav .search-container {
+   float: right;
+  }
+
+  .topnav input[type=text] {
+   font-size: 20px;
+    border: none;
+  }
+
+  .class a{
+    background-color: #white;
+  }
+
+
+  .topnav .search-container button {
+    float: right;
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    }
+
+  .topnav .search-container button:hover {
+    background: #ccc;
+    }
+
+  @media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+
+
+<!–– Crew Style ––> 
+
+</style>
+
+<header>
+ <div class="topnav-1">
+    <a href="/APPS.html">APPS </a>
+    <a href="/FORUMS.html">FORUMS </a>
+    <a href="/LEADERBOARD.html">LEADERBOARD </a>
+    <a href="/CONTRIBUTE.html">CONTRIBUTE </a>
+    <a href="/API.html">API </a>
+    <a href="/SUPPORT.html">SUPPORT </a>
+  </div>
+
+
+
+ <div class="topnav-2">
+    <ol class="menu">
+      <li><a href="/homepage.html"><img class="logo" src="/logo.png"/></img></a></li>
+      <br/>
+      <li><a href="/DISCOVER.html"> DISCOVER </a></li>
+      <li><a href="/MOVIES.html"> MOVIES </a></li>
+      <li><a href="/TV SHOWS.html"> TV SHOWS </a></li>
+      <li><a href="/PEOPLE.html"> PEOPLE </a></li>
+    </ol>
+  
+
+    <div class="topnav-2-right">
+      <ol class="submenu">
+        <li><a href="/more.html"><img class="submenu" src="/more.png"/></img></a></li>
+        <li><a href="/language.html"><img class="submenu" src="/language.png"/></img></a></li>
+        <li><a href="/LOG IN.html">LOG IN </a></li>
+        <li><a href="/SIGN UP.html">SIGN UP </a></li>
+      </ol>
+    </div>
+  </div>
+</header>
+
+<div class="searchbar">
+   <img class="searchbtn" src="/searchbtn.png"/></img>
+   <p1> Search for a movie, tv show, person...</p1>
+  </div>
+
+<main>
+  <div class="coloredbox">
+
+    <div class="content">
+      <div class="poster"><img class="poster" src="/poster2.jpg"/></img></div>
+      <div class="moviename">
+        <a href="/Aladdin.html" class="title">Aladdin</a>
+        <a href="/2019.html" class="year">(2019)</a>
+      </div>
+
+      <div class="info">
+       <ol class"icons">
+            <li><a href="/percentage.html"><img class="icons" src="/percentage3.png"/></img></a></li>
+            <li><a href="/list.html"><img class="icons" src="/list.png"/></img></a></li>
+            <li><a href="/like.html"><img class="icons" src="/like.png"/></img></a></li>
+            <li><a href="/bookmark.html"><img class="icons" src="/bookmark.png"/></img></a></li>
+            <li><a href="/star.html"><img class="icons" src="/star.png"/></img></a></li>
+            <li><a href="/https://youtu.be/foyufD52aog"><img class="icons" src="/play.png"/></img></a></li>
+        </ol>
+      </div>
+      
+      <div class="text">
+      <h1>Overview</h1>
+      <p2> A kindhearted street urchin named Aladdin embarks on a magical adventure after finding a lamp that releases a wisecracking genie while a power-hungry Grand Vizier vies for the same lamp that has the power to make their deepest wishes come true.</p2>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="navbar">
+    <div class="dropdown">
+      <button class="dropbtn">Discussions</button>
+      <div class="dropdown-content">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+      </div>
+    </div>
+
+    <a href="/reviews.html">Reviews</a>
+
+    <div class="dropdown">
+      <button class="dropbtn">Videos</button>
+      <div class="dropdown-content">
+        <a href="/link1.html">Link 1 </a>
+        <a href="/link2.html">Link 2 </a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Images</button>
+      <div class="dropdown-content">
+        <a href="/link1.html">Link 1 </a>
+        <a href="/link2.html">Link 2 </a>
+      </div>
+    </div>
+
+    <a href="/changes.html">Changes</a>
+    <a href="/report.html">Report</a>
+    <a href="/share.html">Share</a>
+    </div>
+</main>
+<br/>
+<br/>
+<div class="cast">
+    <h4>Top Billed Cast</h4>
+    <br/>
+    <img src="/Mena Massoud.jpg"</img>
+  </div>
+  </body>
+</html>
