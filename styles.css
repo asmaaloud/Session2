@@ -1,0 +1,326 @@
+body{ 
+  font-family: Helvetica;
+  }
+  
+  
+  
+  header {
+      overflow: hidden;
+      background-color: #101B22;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+  
+    div.topnav-1{
+      overflow: hidden;
+      background-color: #101B22;
+      font-size:7pt;
+      margin-right: 50px;
+    }
+  
+    .topnav-1 a {
+      padding: 14px 16px;
+      background-color: #101B22;
+      float: right;
+      color: gray;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+  
+  
+    .topnav-2 {
+      overflow: inline;
+      background-color: #101B22;
+      font-size: 12pt;
+      margin-top: 0px;
+      margin-left: 50px;
+    }
+  
+    .topnav-2 a {
+      padding: 14px 16px;
+      background-color: #101B22;
+      float: left;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+    ol.menu{ 
+      list-style:none;
+      display: inline;
+      float:center;
+    }
+  
+    img.logo{
+      width:81px;
+      height:72px;
+    }
+  
+  
+    .topnav-2-right {
+      background-color: #101B22;
+      font-size: 12pt;
+      align: right
+    }
+  
+    .topnav-2-right {
+      float: right;
+      margin-right: 50px;
+    }
+  
+    div.topnav-2-right a {
+    padding: 0px 16px;
+    background-color: #101B22;
+    float: right;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    display: inline-flex;
+    }
+  
+    ol.submenu{ 
+      list-style:none;
+    }
+  
+    li {
+      float: left;
+    }
+  
+    img.submenu{
+      height:20px;
+    }
+  
+  .cast{
+      padding: 16px;
+      margin-right: 50px;
+      margin-left: 50px;
+      float: center;
+  }
+  
+   .id{
+      overflow: visible;
+      display: felx;
+      flex-direction: row;
+      height: 300px;
+    }
+  
+    img.id {
+      margin-bottom: 0px;
+      border-width: 0px;
+      position: relative;
+    }
+  
+  .searchbar {
+      padding: 16px;
+      margin-right: 50px;
+      margin-left: 50px;
+      float: center;
+      Font-size: 12pt;
+      font-style: italic;
+      color: #c7c7c7;
+    }
+  
+    img.searchbtn{
+      height:20px;
+    }
+  
+  main{
+      margin-right: 0px;
+      margin-left: 0px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+  
+  .content {
+      overflow: hidden;
+      background-color: #371c1d;
+      margin-right: 50px;
+      margin-left: 50px;
+      display: felx;
+      flex-direction: row;
+    }
+  
+    .coloredbox{
+      background-color: #371c1d;
+      padding: 40px 0px;
+    }
+  
+    .poster{
+      overflow: visible;
+      display: felx;
+      flex-direction: row;
+      width: 300px;
+      height: 450px;
+    }
+  
+    img.poster {
+      margin-bottom: 0px;
+      border-width: 0px;
+      position: relative;
+    }
+   
+    .title {
+      padding: 10px 2px;
+      text-decoration: none;
+      color:white;
+      font-size: 30pt;
+      font-weight: bold;
+    }
+  
+    .year {
+      text-decoration: none;
+      color:grey;
+      font-size: 15pt;
+    }
+  
+    div.info{
+      overflow: hidden;
+      font-size:7pt;
+      margin-right: 50px;
+    }
+  
+    .info a {
+      padding: 10px 6px;
+      float: left;
+      color: gray;
+      text-align: center;
+      text-decoration: none;
+    }
+  
+    ol{
+      list-style:none;
+      display: inline;
+      float:center;
+    }
+  
+    img.icons {
+      height:68px;
+    }
+  
+    .text {
+      color: white;
+    }
+  
+  
+    .navbar {
+      padding: 16px;
+      margin-right: 50px;
+      margin-left: 50px;
+      float: center;
+      overflow: hidden;
+      background-color: white;
+      font-family: Helvetica;
+      font-weight: bold;
+    }
+  
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+  
+    /* The dropdown container */
+    .dropdown {
+      font-weight: bold;
+      float: left;
+      overflow: hidden;
+    }
+  
+    /* Dropdown button */
+    .dropdown .dropbtn {
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      outline: none;
+      color: black;
+      padding: 14px 16px;
+      background-color: white;
+    }
+  
+    /* Add a gray background color to navbar links on hover */
+    .navbar a:hover, .dropdown:hover .dropbtn {
+      background-color: gray;
+    }
+  
+    /* Dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+  
+    /* Add a black background color to dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+  
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .topnav .search-container {
+     float: right;
+    }
+  
+    .topnav input[type=text] {
+     font-size: 20px;
+      border: none;
+    }
+  
+    .class a{
+      background-color: #white;
+    }
+  
+  
+    .topnav .search-container button {
+      float: right;
+      background: #ddd;
+      font-size: 20px;
+      border: none;
+      cursor: pointer;
+      }
+  
+    .topnav .search-container button:hover {
+      background: #ccc;
+      }
+  
+    @media screen and (max-width: 600px) {
+    .topnav .search-container {
+      float: none;
+    }
+  
+    .topnav a, .topnav input[type=text], .topnav .search-container button {
+      float: none;
+      text-align: left;
+      width: 100%;
+      margin: 0;
+      padding: 14px;
+    }
+  
+  
+  
+  
+  
